@@ -1,0 +1,91 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile {
+    max-width: 650px;
+    width: 100%;
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.profile h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    font-weight: 700;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.profile p {
+    font-size: 1.05em;
+    margin: 12px 0;
+    color: #333;
+}
+
+.profile p b {
+    color: #2c3e50;
+    width: 130px;
+    display: inline-block;
+}
+
+.profile-actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-submit-another {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-submit-another:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(52, 152, 219, 0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .profile {
+        padding: 25px;
+    }
+
+    .profile h2 {
+        font-size: 1.7em;
+    }
+}
